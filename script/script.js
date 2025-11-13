@@ -1,4 +1,4 @@
-console.log('hello')
+console.log('MAVERICK PROJECT')
 const write = document.querySelector("#input")
 const btn = document.querySelector('#btn')
 const board = document.querySelector('.text-con')
