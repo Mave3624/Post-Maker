@@ -90,11 +90,16 @@ svg {
 
 button {
     border: 1px solid gray;
-    width: 110px;
+    width: 120px;
     text-align: center;
     padding: 3px 0;
     box-sizing: content-box;
     border-radius: 10px;
+    grid-area: 2 / 2 / 3 / 3;
+    height: 25px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: rgb(1, 147, 1);
 }
 
 input {
@@ -109,6 +114,8 @@ input {
 
 label {
     font-family: Header-Font, monospace, sans-serif;
+    font-size: 15px;
+    color: rgb(119, 194, 137);
 }
 
 .head-con {
@@ -116,9 +123,17 @@ label {
 }
 
 .input-con {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1.5fr 1fr ;
+    justify-items: center;
     align-items: center;
     height: 100%;
-    gap: 10px;
+    gap: 2px;
+    row-gap: 5px;
+}
+
+.search {
+    grid-area: 1 / 1 / 2 / 4;
+    align-items: center;
+    
 }
